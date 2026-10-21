@@ -1,4 +1,5 @@
 import TagCard from "./TagCard";
+import avatar from "../assets/img/avatar.webp";
 
 type TextCardProps = { title: string; text: string };
 
@@ -23,7 +24,7 @@ export default function About() {
         <div className="col-12 col-lg-5">
           <div className="info-card bio-card">
             <div className="avatar-placeholder">
-              <span>A</span>
+              <img src={avatar} alt="Avatar" />
             </div>
             <h3>Alonso</h3>
             <p className="bio-tagline">Chile 🇨🇱</p>
@@ -67,14 +68,11 @@ export default function About() {
 
       <div className="social-links">
         <a
-          href="https://github.com/Alonso333-RED"
+          href="https://github.com/alonso-space"
           target="_blank"
           rel="noopener noreferrer"
         >
-          GitHub: Alonso333-RED
-        </a>
-        <a href="mailto:alonsitoar018@gmail.com">
-          Correo: alonsitoar018@gmail.com
+          GitHub: alonso-space
         </a>
       </div>
     </section>
