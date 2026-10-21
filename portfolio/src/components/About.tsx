@@ -58,7 +58,7 @@ export default function About() {
             <div className="col-12 col-md-6">
               <TextCard
                 title="🎯 Objetivos"
-                text="Realizar mi práctica profesional en desarrollo de software, aprender de un equipo de profesionales y seguir fortaleciendo mis habilidades técnicas."
+                text="Desarrollar mis habilidades en programación y crear proyectos de software, mientras continúo aprendiendo y explorando nuevas tecnologías."
               />
             </div>
           </div>
