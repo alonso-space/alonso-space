@@ -1,0 +1,110 @@
+/* ===== RESPONSIVE ===== */
+
+/* Celulares */
+
+@media (max-width: 767px) {
+
+    .header-inner {
+
+        padding: 12px 20px;
+
+        justify-content: center;
+
+        text-align: center;
+
+    }
+
+    h1 {
+
+        font-size: 30px;
+
+    }
+
+    .main-nav {
+
+        gap: 16px;
+
+        font-size: 0.9rem;
+
+    }
+
+    .hero-title {
+
+        font-size: 34px;
+
+    }
+
+    .project-card-desc {
+
+        display: none;
+
+    }
+
+    .project-card-image {
+
+        height: 160px;
+
+    }
+
+    .project-card-tech {
+
+        width: 28px;
+
+        height: 28px;
+
+    }
+
+}
+
+/* ===== CELULARES MUY PEQUEÑOS ===== */
+
+@media (max-width: 450px) {
+
+    h1 {
+
+        font-size: 24px;
+
+    }
+
+    .main-nav {
+
+        gap: 10px;
+
+        font-size: 0.8rem;
+
+    }
+
+    .hero-title {
+
+        font-size: 26px;
+
+    }
+
+    .project-card-image {
+
+        height: 140px;
+
+    }
+
+    .project-card-info {
+
+        padding: 13px 14px;
+
+    }
+
+    .project-card-info h2 {
+
+        font-size: 1rem;
+
+    }
+
+    .project-card-tech {
+
+        width: 25px;
+
+        height: 25px;
+
+    }
+
+}
+

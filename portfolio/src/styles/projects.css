@@ -1,0 +1,298 @@
+/* ===== PROYECTOS - SECCION ===== */
+
+.projects-section {
+
+    padding-bottom: 90px;
+
+}
+
+/* ===== PROJECT CARD ===== */
+
+.project-card {
+
+    display: flex;
+
+    flex-direction: column;
+
+    height: 100%;
+
+    width: 100%;
+
+    max-width: 280px;
+
+    margin: 0 auto;
+
+    color: inherit;
+
+    text-decoration: none;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    background: #800000;
+
+    border: 1px solid rgba(0, 0, 0, 0.08);
+
+    box-shadow:
+
+        0 5px 15px rgba(0, 0, 0, 0.08);
+
+    transition:
+
+        transform 0.3s ease,
+
+        box-shadow 0.3s ease,
+
+        border-color 0.3s ease;
+
+}
+
+/* ===== PROJECT CARD - HOVER ===== */
+
+.project-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: rgba(255, 0, 0, 1);
+
+    box-shadow:
+
+        0 15px 35px rgba(0, 0, 0, 0.5);
+
+}
+
+/* ===== PROJECT CARD - IMAGEN ===== */
+
+.project-card-image {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 220px;
+
+    overflow: hidden;
+
+    background: #404040;
+
+}
+
+/* ===== PROJECT CARD - IMAGENES SUPERPUESTAS ===== */
+
+.project-card-img {
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
+
+    transition:
+
+        opacity 0.35s ease,
+
+        transform 0.4s ease;
+
+}
+
+
+/* Imagen normal */
+
+.project-card-img-normal {
+
+    opacity: 1;
+
+}
+
+
+/* Imagen al pasar el cursor */
+
+.project-card-img-hover {
+
+    opacity: 0;
+
+}
+
+/* ===== PROJECT CARD - CAMBIO DE IMAGEN ===== */
+
+.project-card:hover .project-card-img-normal {
+
+    opacity: 0;
+
+    transform: scale(1.05);
+
+}
+
+.project-card:hover .project-card-img-hover {
+
+    opacity: 1;
+
+    transform: scale(1.05);
+
+}
+
+/* ===== PROJECT CARD - OVERLAY ===== */
+
+.project-card-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: center;
+
+    padding-bottom: 18px;
+
+    background:
+
+        linear-gradient(
+
+            to top,
+
+            rgba(0, 0, 0, 0.65),
+
+            rgba(0, 0, 0, 0)
+
+        );
+
+    opacity: 0;
+
+    transition:
+
+        opacity 0.3s ease;
+
+}
+
+
+.project-card:hover .project-card-overlay {
+
+    opacity: 1;
+
+}
+
+/* ===== PROJECT CARD - TEXTO OVERLAY ===== */
+
+.project-card-overlay span {
+
+    padding: 7px 14px;
+
+    border-radius: 20px;
+
+    background: rgba(128, 0, 0, 1);
+
+    color: #ffffff;
+
+    font-size: 0.85rem;
+
+    font-weight: 600;
+
+}
+
+/* ===== PROJECT CARD - INFORMACION ===== */
+
+.project-card-info {
+
+    padding: 16px 18px;
+
+}
+
+/* ===== PROJECT CARD - TITULO Y TECNOLOGIA ===== */
+
+.project-card-title {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 12px;
+
+}
+
+
+/* Nombre del proyecto */
+
+.project-card-info h2 {
+
+    margin: 0;
+
+    font-size: 1.15rem;
+
+    font-weight: 700;
+
+    line-height: 1.2;
+
+}
+
+
+/* Logo de la tecnologia */
+
+.project-card-tech {
+
+    width: 32px;
+
+    height: 32px;
+
+    object-fit: contain;
+
+    flex-shrink: 0;
+
+}
+
+
+
+/* ========================================
+   PROJECT CARD - TAGS Y DESCRIPCION
+   ======================================== */
+
+.project-tags {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 10px 0 0;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 6px;
+
+}
+
+.project-tags li {
+
+    background: rgba(0, 0, 0, 0.35);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    border-radius: 999px;
+
+    padding: 2px 10px;
+
+    font-size: 0.72rem;
+
+}
+
+.project-card-desc {
+
+    margin: 12px 0 0;
+
+    font-size: 0.85rem;
+
+    line-height: 1.45;
+
+    color: rgba(255, 255, 255, 0.85);
+
+}

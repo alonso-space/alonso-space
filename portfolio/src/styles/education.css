@@ -1,0 +1,43 @@
+/* ===== FORMACION ===== */
+
+.education-main {
+  height: auto;
+
+  margin-bottom: 36px;
+}
+
+.education-heading {
+  display: flex;
+
+  align-items: baseline;
+
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+
+  gap: 8px 16px;
+
+  margin-bottom: 10px;
+}
+
+.education-heading h3 {
+  font-family: "Doto", sans-serif;
+
+  font-size: 1.35rem;
+
+  margin: 0;
+}
+
+.education-period {
+  color: rgba(255, 255, 255, 0.65);
+
+  font-size: 0.9rem;
+}
+
+.education-subtitle {
+  font-family: "Doto", sans-serif;
+
+  font-size: 1.2rem;
+
+  margin-bottom: 18px;
+}

@@ -1,0 +1,129 @@
+/* ===== GENERAL ===== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    min-height: 100vh;
+
+    margin: 0;
+
+    background-color: #000000;
+
+    color: #ffffff;
+
+    background-image:
+        radial-gradient(ellipse at top, rgba(128, 0, 0, 0.25), transparent 60%),
+        radial-gradient(ellipse at bottom, rgba(64, 0, 0, 0.35), transparent 55%);
+
+    background-attachment: fixed;
+
+    overflow-x: hidden;
+
+}
+
+/* ===== FONDO DE ESTRELLAS ===== */
+
+#starfield {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    z-index: -1;
+
+    display: block;
+
+}
+
+/* ===== FUENTES ===== */
+
+@font-face {
+
+    font-family: "Doto";
+
+    src: url("../assets/fonts/Doto-Variable.ttf")
+        format("truetype");
+
+    font-weight: 100 900;
+
+    font-style: normal;
+
+}
+
+/* ===== TITULOS ===== */
+
+h1 {
+
+    font-family: "Doto", sans-serif;
+
+    font-size: 42px;
+
+    margin: 0;
+
+}
+
+.section-title {
+
+    font-family: "Doto", sans-serif;
+
+    font-size: 34px;
+
+    margin-bottom: 6px;
+
+}
+
+.section-subtitle {
+
+    color: rgba(255, 255, 255, 0.65);
+
+    margin-bottom: 32px;
+
+}
+
+/* ===== MAIN ===== */
+
+main {
+
+    padding-top: 90px;
+
+}
+
+section {
+
+    padding: 60px 0;
+
+    scroll-margin-top: 90px;
+
+}
+
+/* ===== ENLACES ===== */
+
+a {
+
+    color: #ffffff;
+
+}
+
+/* ===== UTILIDADES ===== */
+
+.xDiv {
+
+    display: flex;
+
+    flex-direction: row;
+
+}
+

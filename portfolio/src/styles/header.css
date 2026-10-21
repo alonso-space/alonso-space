@@ -1,0 +1,86 @@
+/* ===== HEADER ===== */
+
+header {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    z-index: 1000;
+
+}
+
+.myHeader {
+
+    background-color: rgba(128, 0, 0, 0.92) !important;
+
+    backdrop-filter: blur(6px);
+
+    border-bottom: 1px solid rgba(255, 0, 0, 0.3);
+
+}
+
+.header-inner {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    padding: 14px 40px;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+}
+
+.header-inner h1 {
+
+    padding: 0;
+
+    font-size: 34px;
+
+    margin: 0;
+
+}
+
+.main-nav {
+
+    display: flex;
+
+    gap: 24px;
+
+}
+
+.main-nav a {
+
+    font-weight: 600;
+
+    letter-spacing: 0.03em;
+
+    text-decoration: none;
+
+    opacity: 0.85;
+
+    transition: opacity 0.2s ease, color 0.2s ease;
+
+}
+
+.main-nav a:hover {
+
+    opacity: 1;
+
+    color: #ff6b6b;
+
+}
+
