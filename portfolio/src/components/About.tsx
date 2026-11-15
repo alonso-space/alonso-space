@@ -31,10 +31,9 @@ export default function About() {
             <p className="bio-text">
               Estudiante de Enseñanza Media Técnico-Profesional en Programación.
               Tengo experiencia práctica desarrollando proyectos personales con
-              JavaScript, Node.js, Express y bases de datos SQL:
-              aplicaciones web con gestión de usuarios, operaciones CRUD y
-              persistencia de datos. Además, tengo un gran interés en la
-              astronomía.
+              JavaScript, Node.js, Express y bases de datos SQL: aplicaciones
+              web con gestión de usuarios, operaciones CRUD y persistencia de
+              datos. Además, tengo un gran interés en la astronomía.
             </p>
           </div>
         </div>

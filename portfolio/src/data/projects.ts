@@ -38,7 +38,14 @@ export const projects: Project[] = [
     img: img("default/lanotes.png"),
     imgHover: img("hover/lanotes.png"),
     tech: img("techs/node.png"),
-    techs: ["Node.js", "Express", "PostgreSQL", "Docker", "React", "TypeScript"],
+    techs: [
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "Docker",
+      "React",
+      "TypeScript",
+    ],
     description:
       "Aplicación de notas autoalojada para tu red local. Sin nube: tus notas permanecen en tu propia máquina.",
   },
@@ -90,7 +97,7 @@ export const projects: Project[] = [
     tech: img("techs/godot.png"),
     techs: ["Godot"],
     description:
-      "Un juego sobre una célula del sistema inmunitario que se alimenta de bacterias. Fue desarrollado como parte de un proyecto general de videojuegos educativos sobre biología, cuyo proyecto principal se llama BioGame."
+      "Un juego sobre una célula del sistema inmunitario que se alimenta de bacterias. Fue desarrollado como parte de un proyecto general de videojuegos educativos sobre biología, cuyo proyecto principal se llama BioGame.",
   },
   {
     title: "Bio Game",

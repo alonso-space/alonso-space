@@ -1,0 +1,88 @@
+/* Dark es el tema por defecto. Cada token existe en los dos temas para poder compararlos. */
+
+:root,
+:root[data-bs-theme="dark"] {
+  color-scheme: dark;
+  --color-bg: #000000;
+  --color-bg-glow-top: rgba(128, 0, 0, 0.25);
+  --color-bg-glow-bottom: rgba(64, 0, 0, 0.35);
+  --color-text: #ffffff;
+  --color-text-soft: rgba(255, 255, 255, 0.85);
+  --color-text-muted: rgba(255, 255, 255, 0.65);
+  --color-text-faint: rgba(255, 255, 255, 0.5);
+  --color-divider: rgba(255, 255, 255, 0.08);
+  --color-accent: #ff0000;
+  --color-accent-tint: rgba(255, 0, 0, 0.12);
+  --color-eyebrow: #ff6b6b;
+  --color-star: #ffffff;
+  --color-header-bg: rgba(128, 0, 0, 0.92);
+  --color-header-border: rgba(255, 0, 0, 0.3);
+  --color-header-text: #ffffff;
+  --color-header-icon: #ffbfbf;
+  --color-header-link-hover: #ff6b6b;
+  --color-button-bg: #400000;
+  --color-button-border: #000000;
+  --color-outline-border: rgba(255, 255, 255, 0.4);
+  --color-outline-text: #ffffff;
+  --color-social-border: rgba(255, 255, 255, 0.3);
+  --color-card-bg: rgba(128, 0, 0, 0.28);
+  --color-card-border: rgba(255, 0, 0, 0.18);
+  --color-card-border-hover: rgba(255, 0, 0, 0.45);
+  --color-tag-bg: rgba(255, 0, 0, 0.15);
+  --color-tag-border: rgba(255, 0, 0, 0.3);
+  --color-avatar-start: #400000;
+  --color-avatar-end: #000000;
+  --color-project-bg: #800000;
+  --color-project-text: #ffffff;
+  --color-project-text-soft: rgba(255, 255, 255, 0.85);
+  --color-project-border: rgba(0, 0, 0, 0.08);
+  --color-project-shadow: rgba(0, 0, 0, 0.08);
+  --color-project-shadow-hover: rgba(0, 0, 0, 0.5);
+  --color-project-image-bg: #404040;
+  --color-project-overlay: rgba(0, 0, 0, 0.65);
+  --color-project-tag-bg: rgba(0, 0, 0, 0.35);
+  --color-project-tag-border: rgba(255, 255, 255, 0.2);
+}
+
+:root[data-bs-theme="light"] {
+  color-scheme: light;
+  --color-bg: #fbf7f5;
+  --color-bg-glow-top: rgba(179, 0, 0, 0.1);
+  --color-bg-glow-bottom: rgba(179, 0, 0, 0.06);
+  --color-text: #1f0a0a;
+  --color-text-soft: rgba(31, 10, 10, 0.85);
+  --color-text-muted: rgba(31, 10, 10, 0.7);
+  --color-text-faint: rgba(31, 10, 10, 0.6);
+  --color-divider: rgba(31, 10, 10, 0.12);
+  --color-accent: #b30000;
+  --color-accent-tint: rgba(179, 0, 0, 0.1);
+  --color-eyebrow: #b30000;
+  --color-star: #800000;
+  --color-header-bg: rgba(128, 0, 0, 0.92);
+  --color-header-border: rgba(255, 0, 0, 0.3);
+  --color-header-text: #ffffff;
+  --color-header-icon: #ffbfbf;
+  --color-header-link-hover: #ff6b6b;
+  --color-button-bg: #400000;
+  --color-button-border: #000000;
+  --color-outline-border: rgba(31, 10, 10, 0.4);
+  --color-outline-text: #1f0a0a;
+  --color-social-border: rgba(31, 10, 10, 0.3);
+  --color-card-bg: rgba(128, 0, 0, 0.07);
+  --color-card-border: rgba(128, 0, 0, 0.2);
+  --color-card-border-hover: rgba(128, 0, 0, 0.5);
+  --color-tag-bg: rgba(128, 0, 0, 0.08);
+  --color-tag-border: rgba(128, 0, 0, 0.3);
+  --color-avatar-start: #400000;
+  --color-avatar-end: #000000;
+  --color-project-bg: #800000;
+  --color-project-text: #ffffff;
+  --color-project-text-soft: rgba(255, 255, 255, 0.85);
+  --color-project-border: rgba(0, 0, 0, 0.08);
+  --color-project-shadow: rgba(0, 0, 0, 0.12);
+  --color-project-shadow-hover: rgba(0, 0, 0, 0.25);
+  --color-project-image-bg: #404040;
+  --color-project-overlay: rgba(0, 0, 0, 0.65);
+  --color-project-tag-bg: rgba(0, 0, 0, 0.35);
+  --color-project-tag-border: rgba(255, 255, 255, 0.2);
+}

@@ -1,50 +1,50 @@
 # Hi there, I'm Alonso! 👋
 
-### Aspiring Software Engineer · Technical Programming Student
+### Aspiring Software Engineer · Technical-Professional Programming Student
 
-I enjoy learning how things work and turning ideas into software. I build tools, web applications, games, and other personal projects to explore new technologies and improve my programming skills.
+I enjoy learning how things work and turning ideas into software. I build web applications, self-hosted tools, and games to explore new technologies and improve my programming skills.
 
 - 🔭 Working on personal software projects.
-- 🌱 Exploring software development, databases, and web technologies.
+- 🌱 Learning web security and deployment with Docker.
 - 🛠️ Interested in backend development, self-hosted applications, and game development.
 - 🪐 Astronomy enthusiast and technology lover.
-- 🎯 Looking forward to gaining professional experience in software development.
+- 🎯 Looking for a professional internship in software development, where I can contribute and learn from a team of professionals.
 
 ---
 
 ## 🚀 Featured Projects
 
-### 🎮 [GamesOnMyLAN](https://github.com/Alonso333-RED/GamesOnMyLAN)
+### 🎮 [GamesOnMyLAN](https://github.com/alonso-space/GamesOnMyLAN)
 
-**Node.js · Express · PostgreSQL · Docker**
+**Node.js · Express · Docker · PostgreSQL**
 
-A self-hosted platform for sharing, hosting, and managing browser-based games over a local network. Features user management, file handling, permissions, and moderation.
+A self-hosted platform for uploading and playing browser games on local networks. Hierarchical role-based permissions, games isolated on a separate origin, automatic HTTPS, CSRF protection, and bcrypt password hashing. Deployed with Docker.
 
-### 🌌 [AstroPHP](https://github.com/Alonso333-RED/AstroPHP)
+### 📝 [LANotes](https://github.com/alonso-space/LANotes)
 
-**PHP · MySQL · MVC**
+**React · Express · Docker · PostgreSQL**
 
-A web application for managing an astronomical database, built with the Model–View–Controller architecture and CRUD operations.
+A private notes app for local networks that doesn't depend on the cloud. Each user can only access their own notes, with secure sessions, CSRF protection, bcrypt, and login attempt limiting. Frontend built with React and TypeScript.
 
-### 👾 [UFO](https://github.com/Alonso333-RED/UFO)
+### 🛡️ [Tankecitos](https://github.com/alonso-space/Tankecitos)
 
-**Godot Engine · GDScript**
+**Godot · GDScript · WebSockets**
 
-A lightweight bullet-hell game where players dodge randomly generated obstacles and projectiles while trying to survive increasingly challenging patterns.
+A multiplayer tank arena that runs in the browser, built with Godot 4. A headless authoritative server simulates physics, bullets, and damage, while players connect through WebSockets. Controls for desktop and mobile.
 
-### 🚢 [Naval Warfare](https://github.com/Alonso333-RED/NavalWarfare)
+### 🚢 [NavalWarfare](https://github.com/alonso-space/NavalWarfare)
 
 **Python · Arcade**
 
-A naval combat game featuring ships with unique abilities, randomized elements, and strategic gameplay.
+Turn-based naval duels with 12 ships loaded from JSON. Custom combat system: accuracy depends on the target's speed, and damage has a random factor. Features an automated enemy and an object-oriented design.
 
 ---
 
-## 🧰 Technologies & Tools
+## 🧰 Skills
 
 **Programming Languages**
 
-Python · Java · JavaScript · PHP · GDScript
+Python · Java · JavaScript · PHP · GDScript · TypeScript
 
 **Web Development**
 
@@ -52,32 +52,25 @@ Node.js · Express · React
 
 **Databases**
 
-PostgreSQL · MySQL · Oracle Database · SQL
+SQL · MySQL · PostgreSQL
 
-**Tools & Platforms**
+**Tools**
 
-Git · GitHub · Docker · Vite · Linux · Windows
+Git · GitHub · Docker · Vite · Godot Engine
 
-**Game Development**
+**Operating Systems**
 
-Godot Engine · Python Arcade
-
----
-
-## 📚 Currently Learning
-
-- Improving my software design and problem-solving skills.
-- Exploring backend development and web application architecture.
-- Strengthening my understanding of databases and software development practices.
+Linux · Windows
 
 ---
 
 ## 🌐 Languages
 
 - Spanish — Native
-- English — Learning and improving
+- English — Intermediate
 
 ---
 
 ## 🏠 My site
+
 - https://alonso-space.github.io/alonso-space/

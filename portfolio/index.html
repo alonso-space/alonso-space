@@ -1,11 +1,30 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" data-bs-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="AlonsoSpace — el rincón personal de Alonso: proyectos, tecnología y astronomía." />
+    <meta
+      name="description"
+      content="AlonsoSpace — el rincón personal de Alonso: proyectos, tecnología y astronomía."
+    />
     <title>AlonsoSpace</title>
+    <script>
+      // Aplica el tema antes de pintar para evitar un parpadeo del tema equivocado
+      try {
+        const savedTheme = localStorage.getItem("portfolio-theme");
+        const systemTheme = matchMedia("(prefers-color-scheme: light)").matches
+          ? "light"
+          : "dark";
+        const theme =
+          savedTheme === "light" || savedTheme === "dark"
+            ? savedTheme
+            : systemTheme;
+        document.documentElement.setAttribute("data-bs-theme", theme);
+      } catch {
+        // Sin acceso a localStorage: se queda el tema oscuro por defecto
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

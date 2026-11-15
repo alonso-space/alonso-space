@@ -1,110 +1,76 @@
-/* ===== RESPONSIVE ===== */
-
-/* Celulares */
-
 @media (max-width: 767px) {
+  .header-inner {
+    padding: 12px 20px;
+    justify-content: center;
+    text-align: center;
+  }
 
-    .header-inner {
+  h1 {
+    font-size: 30px;
+  }
 
-        padding: 12px 20px;
+  .main-nav {
+    gap: 16px;
+    font-size: 0.9rem;
+  }
 
-        justify-content: center;
+  .hero-title {
+    font-size: 34px;
+  }
 
-        text-align: center;
+  .project-card-desc {
+    display: none;
+  }
 
-    }
+  .project-card-image {
+    height: 160px;
+  }
 
-    h1 {
+  .project-card-tech {
+    width: 28px;
+    height: 28px;
+  }
 
-        font-size: 30px;
-
-    }
-
-    .main-nav {
-
-        gap: 16px;
-
-        font-size: 0.9rem;
-
-    }
-
-    .hero-title {
-
-        font-size: 34px;
-
-    }
-
-    .project-card-desc {
-
-        display: none;
-
-    }
-
-    .project-card-image {
-
-        height: 160px;
-
-    }
-
-    .project-card-tech {
-
-        width: 28px;
-
-        height: 28px;
-
-    }
-
+  .theme-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
 }
-
-/* ===== CELULARES MUY PEQUEÑOS ===== */
 
 @media (max-width: 450px) {
+  h1 {
+    font-size: 24px;
+  }
 
-    h1 {
+  .main-nav {
+    gap: 10px;
+    font-size: 0.8rem;
+  }
 
-        font-size: 24px;
+  .hero-title {
+    font-size: 26px;
+  }
 
-    }
+  .project-card-image {
+    height: 140px;
+  }
 
-    .main-nav {
+  .project-card-info {
+    padding: 13px 14px;
+  }
 
-        gap: 10px;
+  .project-card-info h2 {
+    font-size: 1rem;
+  }
 
-        font-size: 0.8rem;
+  .project-card-tech {
+    width: 25px;
+    height: 25px;
+  }
 
-    }
-
-    .hero-title {
-
-        font-size: 26px;
-
-    }
-
-    .project-card-image {
-
-        height: 140px;
-
-    }
-
-    .project-card-info {
-
-        padding: 13px 14px;
-
-    }
-
-    .project-card-info h2 {
-
-        font-size: 1rem;
-
-    }
-
-    .project-card-tech {
-
-        width: 25px;
-
-        height: 25px;
-
-    }
-
+  .theme-toggle {
+    top: 12px;
+    right: 12px;
+  }
 }
-
