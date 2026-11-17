@@ -1,18 +1,22 @@
 import { skillGroups } from "../data/skills";
+import Reveal from "./Reveal";
+import SectionHeading from "./SectionHeading";
 import TagCard from "./TagCard";
 
 export default function Skills() {
   return (
     <section id="conocimientos" className="skills-section container">
-      <h2 className="section-title">Conocimientos técnicos</h2>
-      <p className="section-subtitle">
-        Lenguajes, herramientas y tecnologías que uso
-      </p>
-
+      <SectionHeading
+        index="02"
+        title="Conocimientos técnicos"
+        subtitle="Lenguajes, herramientas y tecnologías que uso"
+      />
       <div className="row g-4">
-        {skillGroups.map((group) => (
+        {skillGroups.map((group, index) => (
           <div key={group.title} className="col-12 col-sm-6 col-lg-3">
-            <TagCard title={group.title} tags={group.items} />
+            <Reveal delay={(index % 4) * 70}>
+              <TagCard title={group.title} tags={group.items} />
+            </Reveal>
           </div>
         ))}
       </div>

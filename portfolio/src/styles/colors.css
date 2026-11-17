@@ -42,6 +42,23 @@
   --color-project-overlay: rgba(0, 0, 0, 0.65);
   --color-project-tag-bg: rgba(0, 0, 0, 0.35);
   --color-project-tag-border: rgba(255, 255, 255, 0.2);
+  --color-on-accent: #ffffff;
+  --color-glow: rgba(255, 0, 0, 0.18);
+  --color-progress: #ff6b6b;
+  --color-gradient-from: #ffffff;
+  --color-gradient-to: #ff6b6b;
+  --color-placeholder-start: #5a0000;
+  --color-placeholder-end: #1a0000;
+  --color-terminal-bg: rgba(0, 0, 0, 0.6);
+  --color-terminal-border: rgba(255, 0, 0, 0.3);
+  --color-terminal-text: #ffd9d9;
+  --color-terminal-key: #ff6b6b;
+  --color-terminal-string: #ffbfbf;
+  --color-terminal-keyword: #ff4d4d;
+  --color-terminal-dot: rgba(255, 255, 255, 0.25);
+  --color-dashed: rgba(255, 255, 255, 0.25);
+  --color-chip-border: rgba(255, 255, 255, 0.3);
+  --color-chip-active-bg: #ff0000;
 }
 
 :root[data-bs-theme="light"] {
@@ -85,4 +102,21 @@
   --color-project-overlay: rgba(0, 0, 0, 0.65);
   --color-project-tag-bg: rgba(0, 0, 0, 0.35);
   --color-project-tag-border: rgba(255, 255, 255, 0.2);
+  --color-on-accent: #ffffff;
+  --color-glow: rgba(179, 0, 0, 0.14);
+  --color-progress: #ff6b6b;
+  --color-gradient-from: #1f0a0a;
+  --color-gradient-to: #b30000;
+  --color-placeholder-start: #5a0000;
+  --color-placeholder-end: #1a0000;
+  --color-terminal-bg: rgba(31, 10, 10, 0.94);
+  --color-terminal-border: rgba(128, 0, 0, 0.4);
+  --color-terminal-text: #ffd9d9;
+  --color-terminal-key: #ff8a8a;
+  --color-terminal-string: #ffbfbf;
+  --color-terminal-keyword: #ff6b6b;
+  --color-terminal-dot: rgba(255, 255, 255, 0.3);
+  --color-dashed: rgba(31, 10, 10, 0.3);
+  --color-chip-border: rgba(31, 10, 10, 0.3);
+  --color-chip-active-bg: #b30000;
 }

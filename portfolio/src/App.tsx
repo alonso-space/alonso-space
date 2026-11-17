@@ -1,25 +1,37 @@
-import Starfield from "./components/Starfield";
+import { usePointerEffects } from "./hooks/usePointerEffects";
+import About from "./components/About";
+import BackToTop from "./components/BackToTop";
+import Certifications from "./components/Certifications";
+import Contact from "./components/Contact";
+import Education from "./components/Education";
+import Experience from "./components/Experience";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import About from "./components/About";
-import Education from "./components/Education";
-import Skills from "./components/Skills";
+import Learning from "./components/Learning";
 import Projects from "./components/Projects";
-import Footer from "./components/Footer";
+import Skills from "./components/Skills";
+import Starfield from "./components/Starfield";
 
 export default function App() {
+  usePointerEffects();
   return (
     <>
       <Starfield />
       <Header />
       <main className="main-panel">
         <Hero />
-        <About />
-        <Education />
-        <Skills />
         <Projects />
+        <Skills />
+        <Education />
+        <Experience />
+        <About />
+        <Certifications />
+        <Learning />
+        <Contact />
         <Footer />
       </main>
+      <BackToTop />
     </>
   );
 }

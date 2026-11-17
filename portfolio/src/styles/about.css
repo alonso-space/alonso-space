@@ -4,7 +4,6 @@
   border-radius: 16px;
   padding: 22px 24px;
   height: 100%;
-  backdrop-filter: blur(4px);
   transition:
     border-color 0.25s ease,
     transform 0.25s ease;
@@ -88,28 +87,4 @@
   color: var(--color-text-soft);
   line-height: 1.6;
   margin: 0;
-}
-
-.social-links {
-  display: flex;
-  gap: 18px;
-  justify-content: center;
-  margin-top: 40px;
-  flex-wrap: wrap;
-}
-
-.social-links a {
-  padding: 8px 20px;
-  border: 1px solid var(--color-social-border);
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: 600;
-  transition:
-    border-color 0.2s ease,
-    background-color 0.2s ease;
-}
-
-.social-links a:hover {
-  border-color: var(--color-accent);
-  background-color: var(--color-accent-tint);
 }

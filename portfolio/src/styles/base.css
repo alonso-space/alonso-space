@@ -45,15 +45,37 @@ h1 {
   margin: 0;
 }
 
+.section-heading {
+  margin-bottom: 36px;
+}
+
+.section-index {
+  display: block;
+  font-family: "Doto", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.15em;
+  color: var(--color-eyebrow);
+}
+
 .section-title {
   font-family: "Doto", sans-serif;
   font-size: 34px;
   margin-bottom: 6px;
 }
 
+.section-title::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 3px;
+  margin-top: 10px;
+  border-radius: 2px;
+  background: var(--color-accent);
+}
+
 .section-subtitle {
   color: var(--color-text-muted);
-  margin-bottom: 32px;
+  margin: 12px 0 0;
 }
 
 main {
@@ -61,12 +83,17 @@ main {
 }
 
 section {
-  padding: 60px 0;
+  padding: 70px 0;
   scroll-margin-top: 90px;
 }
 
 a {
   color: var(--color-text);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
 }
 
 .x-div {

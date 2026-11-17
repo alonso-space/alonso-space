@@ -1,40 +1,45 @@
 @media (max-width: 767px) {
   .header-inner {
     padding: 12px 20px;
-    justify-content: center;
-    text-align: center;
   }
 
   h1 {
     font-size: 30px;
   }
 
-  .main-nav {
-    gap: 16px;
-    font-size: 0.9rem;
+  .section-title {
+    font-size: 28px;
+  }
+
+  section {
+    padding: 50px 0;
   }
 
   .hero-title {
-    font-size: 34px;
+    font-size: 38px;
   }
 
-  .project-card-desc {
-    display: none;
+  .hero-role {
+    font-size: 1.3rem;
+  }
+
+  .hero-orb {
+    width: 280px;
+    height: 280px;
+    right: -100px;
+  }
+
+  .project-card-featured .project-card-image {
+    height: 210px;
   }
 
   .project-card-image {
-    height: 160px;
+    height: 170px;
   }
 
-  .project-card-tech {
-    width: 28px;
-    height: 28px;
-  }
-
-  .theme-toggle {
-    position: absolute;
-    top: 16px;
-    right: 16px;
+  .back-to-top {
+    right: 14px;
+    bottom: 14px;
   }
 }
 
@@ -43,34 +48,24 @@
     font-size: 24px;
   }
 
-  .main-nav {
-    gap: 10px;
-    font-size: 0.8rem;
-  }
-
   .hero-title {
-    font-size: 26px;
-  }
-
-  .project-card-image {
-    height: 140px;
+    font-size: 30px;
   }
 
   .project-card-info {
-    padding: 13px 14px;
-  }
-
-  .project-card-info h2 {
-    font-size: 1rem;
+    padding: 14px 16px 16px;
   }
 
   .project-card-tech {
-    width: 25px;
-    height: 25px;
+    width: 26px;
+    height: 26px;
   }
 
-  .theme-toggle {
-    top: 12px;
-    right: 12px;
+  .timeline {
+    padding-left: 22px;
+  }
+
+  .timeline-item::before {
+    left: -31px;
   }
 }
