@@ -1,0 +1,111 @@
+.timeline {
+  margin: 0;
+  padding: 0 0 0 28px;
+  list-style: none;
+  border-left: 2px solid var(--color-card-border);
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 24px;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 26px;
+  left: -37px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  box-shadow: 0 0 0 4px var(--color-accent-tint);
+}
+
+.timeline-item.is-pending::before {
+  border: 2px dashed var(--color-accent);
+  background: transparent;
+}
+
+.timeline-item.is-pending .info-card {
+  border-style: dashed;
+}
+
+.timeline-place {
+  margin: 4px 0 8px;
+  color: var(--color-eyebrow);
+  font-weight: 600;
+}
+
+.empty-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 40px 20px;
+  border: 2px dashed var(--color-dashed);
+  border-radius: 16px;
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+.empty-card span {
+  font-size: 2rem;
+}
+
+.empty-card p {
+  margin: 0;
+}
+
+.card-link {
+  display: inline-block;
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+.learning-icon {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.8rem;
+}
+
+.learning-card h4 {
+  margin-bottom: 8px;
+}
+
+.contact-section {
+  padding-bottom: 90px;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 26px;
+  border: 1px solid var(--color-social-border);
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+a.contact-link:hover {
+  border-color: var(--color-accent);
+  background-color: var(--color-accent-tint);
+  transform: translateY(-2px);
+}
+
+.contact-link.is-disabled {
+  border-style: dashed;
+  opacity: 0.45;
+  cursor: not-allowed;
+}

@@ -11,17 +11,27 @@ export const mainStudy: EducationItem = {
     "Programación orientada a objetos, diseño y administración de bases de datos relacionales, desarrollo de aplicaciones web, sistemas operativos y soporte informático.",
 };
 
-export const complementaryStudies: EducationItem[] = [
+// Mismo contenido que el currículum: son pasantías (y un taller), no cursos
+export const internships: EducationItem[] = [
+  {
+    title: "SOTELEC",
+    detail:
+      "Pasantía interna de soporte técnico y apoyo al área informática del liceo.",
+  },
+  {
+    title: "Virginio Gómez",
+    detail: "Pasantía en fundamentos de Python.",
+  },
   {
     title: "INACAP",
-    detail: "Actividad formativa en bases de datos SQL.",
+    detail: "Pasantía en bases de datos SQL.",
   },
   {
     title: "Santo Tomás",
-    detail: "Actividad formativa en React.",
+    detail: "Pasantía en desarrollo con React.",
   },
   {
-    title: "Taller de Robótica",
-    detail: "Construcción de circuitos y trabajo con Arduino y ESP32.",
+    title: "Taller JEC de Robótica",
+    detail: "Taller de circuitos con Arduino y ESP32.",
   },
 ];

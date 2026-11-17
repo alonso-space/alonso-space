@@ -1,88 +1,167 @@
-/* Dark es el tema por defecto. Cada token existe en los dos temas para poder compararlos. */
+/*
+  ÚNICO lugar donde viven los colores del sitio.
+  1) Paleta: los valores crudos, definidos una sola vez.
+  2) Temas: tokens semánticos (--color-*) que solo referencian la paleta.
+  Ningún otro archivo CSS/TSX usa hex ni rgba: para cambiar un tono se toca
+  aquí. Estilo: metal (negro/grafito/acero) con rojo puro.
+*/
 
+/* 1) PALETA */
+:root {
+  /* Rojo puro. "rgb" va como canales para poder usar rgba(var(--red-rgb), .2) */
+  --red: #ff0000;
+  --red-rgb: 255, 0, 0;
+  --red-bright: #ff2a2a; /* rojo puro algo más claro, para textos sobre fondo oscuro */
+  --red-press: #e60000; /* fondo de chips activos (texto blanco encima) */
+  --red-deep: #d40000; /* rojo del tema claro: mejor contraste sobre gris claro */
+  --red-deep-rgb: 212, 0, 0;
+  --maroon: #7a0000;
+  --maroon-rgb: 122, 0, 0;
+  --maroon-light: #8f0000;
+  --maroon-light-rgb: 150, 0, 0;
+  --maroon-dark: #4a0000;
+
+  /* Metal: grises con un leve tono frío */
+  --metal-black: #0d0f12;
+  --metal-graphite: #23282e;
+  --metal-steel: #3a4047;
+  --metal-light: #eceff2;
+  --steel-rgb: 214, 221, 228;
+  --ink-rgb: 20, 23, 26;
+}
+
+/* 2) TEMAS. Dark es el tema por defecto; cada token existe en los dos. */
 :root,
 :root[data-bs-theme="dark"] {
   color-scheme: dark;
-  --color-bg: #000000;
-  --color-bg-glow-top: rgba(128, 0, 0, 0.25);
-  --color-bg-glow-bottom: rgba(64, 0, 0, 0.35);
-  --color-text: #ffffff;
-  --color-text-soft: rgba(255, 255, 255, 0.85);
-  --color-text-muted: rgba(255, 255, 255, 0.65);
-  --color-text-faint: rgba(255, 255, 255, 0.5);
-  --color-divider: rgba(255, 255, 255, 0.08);
-  --color-accent: #ff0000;
-  --color-accent-tint: rgba(255, 0, 0, 0.12);
-  --color-eyebrow: #ff6b6b;
-  --color-star: #ffffff;
-  --color-header-bg: rgba(128, 0, 0, 0.92);
-  --color-header-border: rgba(255, 0, 0, 0.3);
-  --color-header-text: #ffffff;
-  --color-header-icon: #ffbfbf;
-  --color-header-link-hover: #ff6b6b;
-  --color-button-bg: #400000;
-  --color-button-border: #000000;
-  --color-outline-border: rgba(255, 255, 255, 0.4);
-  --color-outline-text: #ffffff;
-  --color-social-border: rgba(255, 255, 255, 0.3);
-  --color-card-bg: rgba(128, 0, 0, 0.28);
-  --color-card-border: rgba(255, 0, 0, 0.18);
-  --color-card-border-hover: rgba(255, 0, 0, 0.45);
-  --color-tag-bg: rgba(255, 0, 0, 0.15);
-  --color-tag-border: rgba(255, 0, 0, 0.3);
-  --color-avatar-start: #400000;
-  --color-avatar-end: #000000;
-  --color-project-bg: #800000;
-  --color-project-text: #ffffff;
-  --color-project-text-soft: rgba(255, 255, 255, 0.85);
-  --color-project-border: rgba(0, 0, 0, 0.08);
-  --color-project-shadow: rgba(0, 0, 0, 0.08);
-  --color-project-shadow-hover: rgba(0, 0, 0, 0.5);
-  --color-project-image-bg: #404040;
+  --color-bg: var(--metal-black);
+  --color-bg-metal: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.045) 0%,
+    transparent 38%,
+    rgba(255, 255, 255, 0.02) 100%
+  );
+  --color-bg-glow-top: rgba(var(--red-rgb), 0.22);
+  --color-bg-glow-bottom: rgba(var(--red-deep-rgb), 0.2);
+  --color-text: #f2f4f6;
+  --color-text-soft: rgba(242, 244, 246, 0.86);
+  --color-text-muted: rgba(var(--steel-rgb), 0.7);
+  --color-text-faint: rgba(var(--steel-rgb), 0.5);
+  --color-divider: rgba(200, 210, 220, 0.1);
+  --color-accent: var(--red);
+  --color-accent-tint: rgba(var(--red-rgb), 0.14);
+  --color-eyebrow: var(--red-bright);
+  --color-star: #c9d1d9;
+  --color-header-bg: rgba(var(--maroon-rgb), 0.94);
+  --color-header-border: rgba(var(--red-rgb), 0.6);
+  --color-header-text: #f2f4f6;
+  --color-header-icon: #ffffff;
+  --color-header-link-hover: var(--red-bright);
+  --color-button-bg: var(--maroon);
+  --color-button-border: var(--red);
+  --color-outline-border: rgba(var(--steel-rgb), 0.4);
+  --color-outline-text: #f2f4f6;
+  --color-social-border: rgba(var(--steel-rgb), 0.3);
+  --color-card-bg: rgba(var(--maroon-light-rgb), 0.22);
+  --color-card-border: rgba(var(--red-rgb), 0.22);
+  --color-card-border-hover: rgba(var(--red-rgb), 0.55);
+  --color-tag-bg: rgba(var(--red-rgb), 0.2);
+  --color-tag-border: rgba(var(--red-rgb), 0.38);
+  --color-avatar-start: var(--maroon-light);
+  --color-avatar-end: var(--metal-black);
+  --color-project-bg: linear-gradient(160deg, var(--maroon-light) 0%, var(--maroon-dark) 50%, #1a1414 100%);
+  --color-project-bg-solid: var(--maroon-dark);
+  --color-project-text: #f2f4f6;
+  --color-project-text-soft: rgba(242, 244, 246, 0.82);
+  --color-project-border: rgba(200, 210, 220, 0.12);
+  --color-project-shadow: rgba(0, 0, 0, 0.35);
+  --color-project-shadow-hover: rgba(0, 0, 0, 0.6);
+  --color-project-image-bg: #30363c;
   --color-project-overlay: rgba(0, 0, 0, 0.65);
-  --color-project-tag-bg: rgba(0, 0, 0, 0.35);
-  --color-project-tag-border: rgba(255, 255, 255, 0.2);
+  --color-project-tag-bg: rgba(0, 0, 0, 0.32);
+  --color-project-tag-border: rgba(255, 255, 255, 0.18);
+  --color-on-accent: #ffffff;
+  --color-glow: rgba(var(--red-rgb), 0.28);
+  --color-progress: var(--red);
+  --color-gradient-from: #ffffff;
+  --color-gradient-to: var(--red);
+  --color-placeholder-start: var(--maroon);
+  --color-placeholder-end: #140c0c;
+  --color-terminal-bg: rgba(28, 6, 6, 0.78);
+  --color-terminal-border: rgba(var(--red-rgb), 0.38);
+  --color-terminal-text: #e4e8ec;
+  --color-terminal-key: var(--red-bright);
+  --color-terminal-string: #aeb9c4;
+  --color-terminal-keyword: var(--red);
+  --color-terminal-dot: rgba(255, 255, 255, 0.25);
+  --color-dashed: rgba(var(--steel-rgb), 0.25);
+  --color-chip-border: rgba(var(--steel-rgb), 0.3);
+  --color-chip-active-bg: var(--red-press);
 }
 
 :root[data-bs-theme="light"] {
   color-scheme: light;
-  --color-bg: #fbf7f5;
-  --color-bg-glow-top: rgba(179, 0, 0, 0.1);
-  --color-bg-glow-bottom: rgba(179, 0, 0, 0.06);
-  --color-text: #1f0a0a;
-  --color-text-soft: rgba(31, 10, 10, 0.85);
-  --color-text-muted: rgba(31, 10, 10, 0.7);
-  --color-text-faint: rgba(31, 10, 10, 0.6);
-  --color-divider: rgba(31, 10, 10, 0.12);
-  --color-accent: #b30000;
-  --color-accent-tint: rgba(179, 0, 0, 0.1);
-  --color-eyebrow: #b30000;
-  --color-star: #800000;
-  --color-header-bg: rgba(128, 0, 0, 0.92);
-  --color-header-border: rgba(255, 0, 0, 0.3);
-  --color-header-text: #ffffff;
-  --color-header-icon: #ffbfbf;
-  --color-header-link-hover: #ff6b6b;
-  --color-button-bg: #400000;
-  --color-button-border: #000000;
-  --color-outline-border: rgba(31, 10, 10, 0.4);
-  --color-outline-text: #1f0a0a;
-  --color-social-border: rgba(31, 10, 10, 0.3);
-  --color-card-bg: rgba(128, 0, 0, 0.07);
-  --color-card-border: rgba(128, 0, 0, 0.2);
-  --color-card-border-hover: rgba(128, 0, 0, 0.5);
-  --color-tag-bg: rgba(128, 0, 0, 0.08);
-  --color-tag-border: rgba(128, 0, 0, 0.3);
-  --color-avatar-start: #400000;
-  --color-avatar-end: #000000;
-  --color-project-bg: #800000;
-  --color-project-text: #ffffff;
-  --color-project-text-soft: rgba(255, 255, 255, 0.85);
-  --color-project-border: rgba(0, 0, 0, 0.08);
-  --color-project-shadow: rgba(0, 0, 0, 0.12);
-  --color-project-shadow-hover: rgba(0, 0, 0, 0.25);
-  --color-project-image-bg: #404040;
+  --color-bg: var(--metal-light);
+  --color-bg-metal: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.75) 0%,
+    transparent 45%,
+    rgba(120, 132, 144, 0.12) 100%
+  );
+  --color-bg-glow-top: rgba(var(--red-deep-rgb), 0.14);
+  --color-bg-glow-bottom: rgba(var(--red-deep-rgb), 0.1);
+  --color-text: #14171a;
+  --color-text-soft: rgba(var(--ink-rgb), 0.86);
+  --color-text-muted: rgba(var(--ink-rgb), 0.72);
+  --color-text-faint: rgba(var(--ink-rgb), 0.6);
+  --color-divider: rgba(var(--ink-rgb), 0.12);
+  --color-accent: var(--red-deep);
+  --color-accent-tint: rgba(var(--red-deep-rgb), 0.1);
+  --color-eyebrow: var(--red-deep);
+  --color-star: #5b6672;
+  --color-header-bg: rgba(var(--maroon-rgb), 0.94);
+  --color-header-border: rgba(var(--red-rgb), 0.6);
+  --color-header-text: #f2f4f6;
+  --color-header-icon: #ffffff;
+  --color-header-link-hover: var(--red-bright);
+  --color-button-bg: var(--maroon);
+  --color-button-border: var(--red-deep);
+  --color-outline-border: rgba(var(--ink-rgb), 0.4);
+  --color-outline-text: #14171a;
+  --color-social-border: rgba(var(--ink-rgb), 0.3);
+  --color-card-bg: rgba(var(--red-deep-rgb), 0.07);
+  --color-card-border: rgba(var(--red-deep-rgb), 0.25);
+  --color-card-border-hover: rgba(var(--red-deep-rgb), 0.6);
+  --color-tag-bg: rgba(var(--red-deep-rgb), 0.12);
+  --color-tag-border: rgba(var(--red-deep-rgb), 0.32);
+  --color-avatar-start: var(--maroon-light);
+  --color-avatar-end: #14171a;
+  --color-project-bg: linear-gradient(160deg, var(--maroon-light) 0%, var(--maroon-dark) 50%, #1a1414 100%);
+  --color-project-bg-solid: var(--maroon-dark);
+  --color-project-text: #f2f4f6;
+  --color-project-text-soft: rgba(242, 244, 246, 0.82);
+  --color-project-border: rgba(var(--ink-rgb), 0.1);
+  --color-project-shadow: rgba(var(--ink-rgb), 0.18);
+  --color-project-shadow-hover: rgba(var(--ink-rgb), 0.35);
+  --color-project-image-bg: #30363c;
   --color-project-overlay: rgba(0, 0, 0, 0.65);
-  --color-project-tag-bg: rgba(0, 0, 0, 0.35);
-  --color-project-tag-border: rgba(255, 255, 255, 0.2);
+  --color-project-tag-bg: rgba(0, 0, 0, 0.32);
+  --color-project-tag-border: rgba(255, 255, 255, 0.18);
+  --color-on-accent: #ffffff;
+  --color-glow: rgba(var(--red-deep-rgb), 0.22);
+  --color-progress: var(--red);
+  --color-gradient-from: #14171a;
+  --color-gradient-to: var(--red-deep);
+  --color-placeholder-start: var(--maroon);
+  --color-placeholder-end: #140c0c;
+  --color-terminal-bg: rgba(40, 6, 6, 0.95);
+  --color-terminal-border: rgba(var(--red-deep-rgb), 0.45);
+  --color-terminal-text: #e4e8ec;
+  --color-terminal-key: var(--red-bright);
+  --color-terminal-string: #aeb9c4;
+  --color-terminal-keyword: var(--red-bright);
+  --color-terminal-dot: rgba(255, 255, 255, 0.3);
+  --color-dashed: rgba(var(--ink-rgb), 0.3);
+  --color-chip-border: rgba(var(--ink-rgb), 0.3);
+  --color-chip-active-bg: var(--red-deep);
 }
