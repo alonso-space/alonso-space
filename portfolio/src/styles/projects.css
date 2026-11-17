@@ -24,7 +24,9 @@
 .project-card:hover {
   --lift: -6px;
   border-color: var(--color-accent);
-  box-shadow: 0 15px 35px var(--color-project-shadow-hover);
+  box-shadow:
+    0 15px 35px var(--color-project-shadow-hover),
+    0 0 18px var(--color-glow);
 }
 
 .project-card-image {
@@ -181,7 +183,7 @@
 
 .project-card-actions a:hover {
   background: var(--color-project-text);
-  color: var(--color-project-bg);
+  color: var(--color-project-bg-solid);
 }
 
 .projects-others-head {

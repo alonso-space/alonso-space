@@ -3,10 +3,11 @@ export type SkillGroup = {
   items: string[];
 };
 
+// Mismo contenido y orden que el currículum
 export const skillGroups: SkillGroup[] = [
   {
     title: "💻 Lenguajes",
-    items: ["Python", "Java", "JavaScript", "TypeScript", "PHP", "GDScript"],
+    items: ["Python", "Java", "JavaScript", "PHP", "GDScript", "TypeScript"],
   },
   {
     title: "🌐 Desarrollo web",
@@ -14,22 +15,18 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     title: "🗄️ Bases de datos",
-    items: ["SQL", "MySQL", "Oracle Database (SQL)", "PostgreSQL"],
+    items: ["SQL", "MySQL", "PostgreSQL"],
+  },
+  {
+    title: "🔧 Herramientas",
+    items: ["Git", "GitHub", "Docker", "Vite", "Godot Engine"],
   },
   {
     title: "🐧 Sistemas operativos",
     items: ["Linux", "Windows"],
   },
   {
-    title: "🔧 Herramientas",
-    items: ["Git", "GitHub", "Docker", "Vite"],
-  },
-  {
-    title: "🧪 Entornos y motores",
-    items: ["XAMPP", "LAMPP", "Godot Engine"],
-  },
-  {
-    title: "📋 Productividad",
+    title: "📋 Ofimática y diseño",
     items: ["Google Workspace", "Canva"],
   },
 ];

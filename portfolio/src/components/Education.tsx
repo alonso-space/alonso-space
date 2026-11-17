@@ -1,4 +1,4 @@
-import { complementaryStudies, mainStudy } from "../data/education";
+import { internships, mainStudy } from "../data/education";
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
 
@@ -21,10 +21,10 @@ export default function Education() {
           <p className="setup-text">{mainStudy.detail}</p>
         </div>
       </Reveal>
-      <h3 className="education-subtitle">Formación complementaria</h3>
+      <h3 className="education-subtitle">Pasantías y talleres</h3>
       <div className="row g-4">
-        {complementaryStudies.map((item, index) => (
-          <div key={item.title} className="col-12 col-md-4">
+        {internships.map((item, index) => (
+          <div key={item.title} className="col-12 col-md-6 col-lg-4">
             <Reveal delay={index * 80}>
               <div className="info-card spot">
                 <h4>{item.title}</h4>
