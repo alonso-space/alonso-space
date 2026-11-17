@@ -1,8 +1,15 @@
-import react, { reactCompilerPreset } from "@vitejs/plugin-react";
-import babel from "@rolldown/plugin-babel";
-import { defineConfig } from "vite";
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import babel from 'vite-plugin-babel';
+import reactCompilerPreset from 'babel-plugin-react-compiler';
 
 export default defineConfig({
-  base: "/alonso-space/",
-  plugins: [react(), babel({ presets: [reactCompilerPreset()] })],
+  base: process.env.DEPLOY_TARGET === 'cloudflare'
+    ? '/'
+    : '/alonso-space/',
+
+  plugins: [
+    react(),
+    babel({ presets: [reactCompilerPreset()] }),
+  ],
 });
