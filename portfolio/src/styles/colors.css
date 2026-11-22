@@ -69,7 +69,12 @@
   --color-tag-border: rgba(var(--red-rgb), 0.38);
   --color-avatar-start: var(--maroon-light);
   --color-avatar-end: var(--metal-black);
-  --color-project-bg: linear-gradient(160deg, var(--maroon-light) 0%, var(--maroon-dark) 50%, #1a1414 100%);
+  --color-project-bg: linear-gradient(
+    160deg,
+    var(--maroon-light) 0%,
+    var(--maroon-dark) 50%,
+    #1a1414 100%
+  );
   --color-project-bg-solid: var(--maroon-dark);
   --color-project-text: #f2f4f6;
   --color-project-text-soft: rgba(242, 244, 246, 0.82);
@@ -136,7 +141,12 @@
   --color-tag-border: rgba(var(--red-deep-rgb), 0.32);
   --color-avatar-start: var(--maroon-light);
   --color-avatar-end: #14171a;
-  --color-project-bg: linear-gradient(160deg, var(--maroon-light) 0%, var(--maroon-dark) 50%, #1a1414 100%);
+  --color-project-bg: linear-gradient(
+    160deg,
+    var(--maroon-light) 0%,
+    var(--maroon-dark) 50%,
+    #1a1414 100%
+  );
   --color-project-bg-solid: var(--maroon-dark);
   --color-project-text: #f2f4f6;
   --color-project-text-soft: rgba(242, 244, 246, 0.82);
