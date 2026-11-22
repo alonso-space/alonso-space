@@ -7,6 +7,9 @@ export type ContactLink = {
 
 export const contactLinks: ContactLink[] = [
   { label: "GitHub", icon: "🐙", href: "https://github.com/alonso-space" },
-  { label: "Correo", icon: "✉️", href: "" },
-  { label: "LinkedIn", icon: "💼", href: "" },
+  {
+    label: "LinkedIn",
+    icon: "💼",
+    href: "https://www.linkedin.com/in/alonso-aravena-447672446",
+  },
 ];

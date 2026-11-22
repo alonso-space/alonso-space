@@ -22,21 +22,50 @@ export default function Certifications() {
           {certifications.map((item, index) => (
             <div key={item.title} className="col-12 col-md-6 col-lg-4">
               <Reveal delay={(index % 3) * 80}>
-                <div className="info-card spot">
+                <div className="info-card certification-card spot">
                   <h4>{item.title}</h4>
-                  <p className="setup-text">
-                    {item.issuer}
-                    {item.year && ` · ${item.year}`}
-                  </p>
-                  {item.link && (
-                    <a
-                      href={item.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="card-link"
-                    >
-                      Ver credencial ↗
-                    </a>
+                  <p className="setup-text">{item.issuer}</p>
+                  {item.img && (
+                    <img
+                      src={item.img}
+                      alt={`Insignia ${item.title} de ${item.issuer}`}
+                      width={180}
+                      height={180}
+                      loading="lazy"
+                      className="certification-badge"
+                    />
+                  )}
+                  {(item.link || item.file) && (
+                    <div className="certification-actions">
+                      {item.link && (
+                        <a
+                          href={item.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="certification-action is-primary"
+                        >
+                          <span
+                            className="certification-icon is-credential"
+                            aria-hidden="true"
+                          />
+                          Ver credencial
+                        </a>
+                      )}
+                      {item.file && (
+                        <a
+                          href={item.file}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="certification-action"
+                        >
+                          <span
+                            className="certification-icon is-file"
+                            aria-hidden="true"
+                          />
+                          Certificado PDF
+                        </a>
+                      )}
+                    </div>
                   )}
                 </div>
               </Reveal>
